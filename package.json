@@ -4,6 +4,8 @@
 	"description": "Is that a lighthouse over there?",
 	"main": "eddy-detect.js",
 	"scripts": {
+		"start": "http-server",
+		"open": "xdg-open ./page.html",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -11,5 +13,8 @@
 		"url": "https://archive.voodoowarez.com/eddy-detect"
 	},
 	"author": "rektide de la faye",
-	"license": "MIT/X"
+	"license": "MIT/X",
+	"devDependencies": {
+		"http-server": "^0.9.0"
+	}
 }

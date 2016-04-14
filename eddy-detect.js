@@ -34,4 +34,6 @@ var eddystoneFactory= function(o){
 	})
 }
 
-module.exports= eddystoneFactory
+if(typeof module !== "undefined"){
+	module.exports= eddystoneFactory
+}
