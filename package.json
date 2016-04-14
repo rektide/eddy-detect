@@ -1,0 +1,15 @@
+{
+	"name": "eddy-detect",
+	"version": "1.0.0",
+	"description": "Is that a lighthouse over there?",
+	"main": "eddy-detect.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/eddy-detect"
+	},
+	"author": "rektide de la faye",
+	"license": "MIT/X"
+}
