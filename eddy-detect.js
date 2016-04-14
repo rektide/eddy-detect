@@ -1,20 +1,10 @@
-var EDDYSTONE_SERVICE_UUID= "FEAA"
-var UID= "00"
-var URL= "10"
-var TLM= "20"
-var RESERVED1= "30"
-var RESERVED2= "40"
-
-var EDDYSTONE_UID = "0x" + EDDYSTONE_SERVICE_UUID + UID
-var EDDYSTONE_URL = "0x" + EDDYSTONE_SERVICE_UUID + URL
-var EDDYSTONE_TLM = "0x" + EDDYSTONE_SERVICE_UUID + TLM
-
 var options= {
-	filters: [{services: [
-		EDDYSTONE_UID,
-		EDDYSTONE_URL,
-		EDDYSTONE_TLM
-	]}]
+	filters: []
+}
+if(typeof require !== "undefined"){
+	options.filters.push(require("./uuid"))
+}else{
+	options.filters.push(module.exports.EDDYSTONE_FILTER)
 }
 
 var eddystoneFactory= function(o){
